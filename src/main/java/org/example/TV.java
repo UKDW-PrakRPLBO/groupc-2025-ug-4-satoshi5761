@@ -17,22 +17,31 @@ public class TV {
     int getResolution() {
         double rx = colokan.getRealBandwidth();
         int reso;
-        switch (rx) {
-            case (rx > 100): 
-                reso = 1080;
-                break;
-
-            case (rx > 35): 
-                reso = 720;
-                break;
-            
-            case (rx > 9): 
-                reso = 480;
-                break;
-            
-            default:
-                reso = 0;
+        if (rx > 100) {
+            reso = 1080;
+        } else if (rx > 35) {
+            reso = 720;
+        } else if (rx > 9){
+            reso = 480;
+        } else {
+            reso = 0;
         }
+//        switch (rx) {
+//            case (rx > 100):
+//                reso = 1080;
+//                break;
+//
+//            case (rx > 35):
+//                reso = 720;
+//                break;
+//
+//            case (rx > 9):
+//                reso = 480;
+//                break;
+//
+//            default:
+//                reso = 0;
+//        }
 
         if (reso == 1080 && maxResolution == 720) {
             reso = 720;
