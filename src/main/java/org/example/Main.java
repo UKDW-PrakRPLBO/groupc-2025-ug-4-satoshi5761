@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Running program");
         // Test 1
         System.out.println("==== Test Case 1 Output ====");
         int resolusi = 1080;

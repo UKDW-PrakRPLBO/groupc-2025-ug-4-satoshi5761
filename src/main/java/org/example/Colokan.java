@@ -6,7 +6,7 @@ public abstract class Colokan {
     private double promiseBandwidth;
     private int harga;
 
-    Colokan(int harga, double promiseBandwidth, String merk) {
+    public Colokan(int harga, double promiseBandwidth, String merk) {
         this.merk = merk;
         this.harga = harga;
         this.promiseBandwidth = promiseBandwidth;

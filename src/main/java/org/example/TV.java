@@ -10,10 +10,7 @@ public class TV {
     }
 
     void connect(Colokan colokan) {
-        this.colokan.merk = colokan.merk;
-        this.colokan.promiseBandwidth = colokan.promiseBandwidth;
-        this.colokan.harga = colokan.harga;
-
+        this.colokan = colokan;
         System.out.println("Berhasil Connect ke - " + colokan.getMerk());
     }
 
